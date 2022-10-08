@@ -16,8 +16,8 @@ El desarrollo de toda Aplicación Web requiere seguir un [proceso estructurado](
 
 #### Curso Escolar 2022-2023
 #### Autor: [Carlos Muñoz Iglesias](https://github.com/romitus)
-#### Tutor: [Nombre del profesor tutor](Enlace a su cuenta de gitHub)
-#### Fecha de Inicio: DD-MM-YYYY
+#### Tutor: [Angélica Mora Núñez](Enlace a su cuenta de gitHub)
+#### Fecha de Inicio: 26-09-2022
 #### Fecha de Finalización: DD-MM-YYYY
 
 ## Breve descripción del proyecto
@@ -30,7 +30,7 @@ En este apartado el alumno debe hacer una breve descripción del proyecto que va
 **Tener una gran idea** o encontrar un punto del mercado al que no se esté dando un producto o servicio es el punto de partida en cada nuevo proyecto. Antes de comenzar debes **definir claramente el propósito y la misión de la aplicación web**:
 
 - **¿Qué va a hacer la aplicación?**
-- **¿Cuál es su atractivo principal?** 
+- **¿Cuál es su atractivo principal?**
 - **¿Qué problema concreto va a resolver?** 
 - **¿Qué necesidad va a cubrir?**
 
