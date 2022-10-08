@@ -12,10 +12,10 @@ El desarrollo de toda Aplicación Web requiere seguir un [proceso estructurado](
 
 ---
 
-# Título del Proyecto
+# New Eden
 
-#### Curso Escolar 20XX-20XX
-#### Autor: [Nombre del alumno autor](Enlace a su cuenta de gitHub)
+#### Curso Escolar 2022-2023
+#### Autor: [Carlos Muñoz Iglesias](https://github.com/romitus)
 #### Tutor: [Nombre del profesor tutor](Enlace a su cuenta de gitHub)
 #### Fecha de Inicio: DD-MM-YYYY
 #### Fecha de Finalización: DD-MM-YYYY
