@@ -8,17 +8,25 @@
 
 ## Breve descripción del proyecto
 
-Si ya tienes una idea para tu aplicación, explícala brevemente. Si no es así, lo que realmente necesitas es **buscar un problema o necesidad a la que darle solución**, y estos **están por todas partes**. Así que trata de buscar problemas o necesidades en tu vida diaria y realiza una lista. Una vez que tengas una lista exhaustiva, ya puedes empezar a pensar en **cómo puedes resolverlos**.
-
-En este apartado el alumno debe hacer una breve descripción del proyecto que vaya a realizar. Esta descripción no será ua descripción detallada, será una presentación general con no más de 10 líneas.
+Sistema de gestión de invernaderos o reservas de agua y meteorología en zonas rurales a través de un Dashboard; mediante el uso de sensores microcontroladores y tecnología web.
 
 ## Definir el objetivo de la aplicación
-**Tener una gran idea** o encontrar un punto del mercado al que no se esté dando un producto o servicio es el punto de partida en cada nuevo proyecto. Antes de comenzar debes **definir claramente el propósito y la misión de la aplicación web**:
 
 - **¿Qué va a hacer la aplicación?**
+
+El objetivo de este proyecto es poder automatizar cultivos o reservas de agua en un invernadero o zona rural, permitiendo almacenar lecturas de los sensores del ESP32 o ESP8266 a una base de datos, pudiendo así acceder a las lecturas desde cualquier parte del mundo a través de internet mediante un dashboard.Lo cual nos permite tomar decisiones conforme a las lecturas de datos, así como también activar y desactivar funciones; como por ejemplo permitir el paso o no de agua con una válvula solenoide conectada a un ESP32 o ESP8266.
+
 - **¿Cuál es su atractivo principal?**
-- **¿Qué problema concreto va a resolver?** 
+
+ La automatizacion y visualización de los cultivos o plantas de una jardinera.
+ 
+- **¿Qué problema concreto va a resolver?**
+
+ El correcto cuidado de esas plantas para que tengan buena salud.
+ 
 - **¿Qué necesidad va a cubrir?**
+
+ La automatización para apenas hacer mantenimiento a las plantas.
 
 ## Prototipo de la Interfaz del proyecto
 
