@@ -35,7 +35,7 @@ El objetivo de este proyecto es poder automatizar cultivos o reservas de agua en
 ## Estructura del Proyecto
 
 En este apartado el alumno explicará el contenido del repositorio y de todas las carpetas relevantes del mismo.
-
+```bash
 ├── docs
 │   ├── Alcance.md
 │   ├── Casos de Uso
@@ -47,7 +47,7 @@ En este apartado el alumno explicará el contenido del repositorio y de todas la
 │   ├── README.md
 ├── README.md
 └── mock.png
-
+```
 ## Demostración del proyecto
 
 ```diff
