@@ -30,11 +30,7 @@ El objetivo de este proyecto es poder automatizar cultivos o reservas de agua en
 
 ## Prototipo de la Interfaz del proyecto
 
-En este apartado el alumno insertará la documentación del prototipo del proyecto (sketch, wireframe, mockup y un prototipo HTML y CSS)  que permite al cliente previsualizar el resultado final del producto que se está desarrollando.
-
-....
-....
-....
+![Mock del proyecto Escritorio](mock.png "Mock New Eden")
 
 ## Estructura del Proyecto
 
