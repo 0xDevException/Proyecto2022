@@ -36,6 +36,20 @@ El objetivo de este proyecto es poder automatizar cultivos o reservas de agua en
 
 En este apartado el alumno explicará el contenido del repositorio y de todas las carpetas relevantes del mismo.
 
+├── docs
+│   ├── Alcance.md
+│   ├── Casos de Uso
+│   ├── Casos de Uso
+│   ├── Prototipo
+│   ├── Usabilidad
+│   ├── README.md
+├── src
+│   ├── README.md
+├── README.md
+└── mock.png
+
 ## Demostración del proyecto
 
-Vídeo demostrativo que contenga una pequeña demostración de la apariencia del proyecto y de aquello que el proyecto puede hacer. (No más de 2 minutos).
+```diff
+Tarea en curso
+```
