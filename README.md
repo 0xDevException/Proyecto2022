@@ -2,15 +2,17 @@
 
 #### Curso Escolar 2022-2023
 #### Autor: [Carlos Muñoz Iglesias](https://github.com/romitus)
-#### Tutor: [Angélica Mora Núñez](Enlace a su cuenta de gitHub)
+#### Tutor: Angélica Mora Núñez
 #### Fecha de Inicio: 26-09-2022
 #### Fecha de Finalización: DD-MM-YYYY
 
 ## Breve descripción del proyecto
+***
 
 Sistema de gestión de invernaderos o reservas de agua y meteorología en zonas rurales a través de un Dashboard; mediante el uso de sensores microcontroladores y tecnología web.
 
 ## Definir el objetivo de la aplicación
+***
 
 - **¿Qué va a hacer la aplicación?**
 
@@ -29,27 +31,33 @@ El objetivo de este proyecto es poder automatizar cultivos o reservas de agua en
  La automatización para apenas hacer mantenimiento a las plantas.
 
 ## Prototipo de la Interfaz del proyecto
+***
 
 ![Mock del proyecto Escritorio](mock.png "Mock New Eden")
 
 ## Estructura del Proyecto
-
+***
 En este apartado el alumno explicará el contenido del repositorio y de todas las carpetas relevantes del mismo.
 ```bash
 ├── docs
-│   ├── Alcance.md
-│   ├── Casos de Uso
-│   ├── Casos de Uso
-│   ├── Prototipo
-│   ├── Usabilidad
-│   ├── README.md
-├── src
-│   ├── README.md
+│   ├── Alcance.md
+│   ├── Arquitectura_del_Proyecto
+│   │   ├── Accesibilidad
+│   │   ├── Mapa_de_la_Aplicación.md
+│   │   └── Modelo_de_Datos
+│   │       ├── Modelo de datos.pdf
+│   │       └── Requisitos de la BD.docx
+│   ├── Casos de Uso
+│   ├── Prototipo
+│   ├── README.md
+│   └── Usabilidad
+├── mock.png
 ├── README.md
-└── mock.png
+└── src
+    └── README.md
 ```
 ## Demostración del proyecto
-
+***
 ```diff
 Tarea en curso
 ```
