@@ -40,21 +40,29 @@ El objetivo de este proyecto es poder automatizar cultivos o reservas de agua en
 En este apartado el alumno explicará el contenido del repositorio y de todas las carpetas relevantes del mismo.
 ```bash
 ├── docs
-│   ├── Alcance.md
-│   ├── Arquitectura_del_Proyecto
-│   │   ├── Accesibilidad
-│   │   ├── Mapa_de_la_Aplicación.md
-│   │   └── Modelo_de_Datos
-│   │       ├── Modelo de datos.pdf
-│   │       └── Requisitos de la BD.docx
-│   ├── Casos de Uso
-│   ├── Prototipo
-│   ├── README.md
-│   └── Usabilidad
+│   ├── Alcance.md
+│   ├── Arquitectura_del_Proyecto
+│   │   ├── Accesibilidad
+│   │   ├── Mapa_de_la_Aplicación.md
+│   │   └── Modelo_de_Datos
+│   │       ├── Modelo de datos.pdf
+│   │       └── Requisitos de la BD.docx
+│   ├── Casos de Uso
+│   ├── Prototipo
+│   ├── README.md
+│   └── Usabilidad
 ├── mock.png
 ├── README.md
 └── src
-    └── README.md
+    ├── controllers
+    │   └── README.md
+    ├── models
+    │   └── README.md
+    ├── README.md
+    ├── routes
+    │   └── README.md
+    └── services
+        └── README.md
 ```
 ## Demostración del proyecto
 ***
