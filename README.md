@@ -54,6 +54,8 @@ En este apartado el alumno explicará el contenido del repositorio y de todas la
 ├── mock.png
 ├── README.md
 └── src
+    ├── app.py
+    ├── config.py
     ├── controllers
     │   └── README.md
     ├── models
