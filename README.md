@@ -57,14 +57,18 @@ En este apartado el alumno explicará el contenido del repositorio y de todas la
     ├── app.py
     ├── config.py
     ├── controllers
+    │   ├── controller.py
     │   └── README.md
     ├── models
+    │   ├── model.py
     │   └── README.md
     ├── README.md
     ├── routes
+    │   ├── blueprint.py
     │   └── README.md
     └── services
-        └── README.md
+        ├── README.md
+        └── user_service.py
 ```
 ## Demostración del proyecto
 ***
