@@ -67,7 +67,8 @@ En este apartado el alumno explicará el contenido del repositorio y de todas la
     │   ├── README.md
     │   └── user_bp.py
     └── templates
-        └── index.html
+        ├── index.html
+        └── users.html
 ```
 ## Demostración del proyecto
 ***
