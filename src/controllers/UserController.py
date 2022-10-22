@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 def index():
-    ...
+    return {"home": "this is the home route"}
 
 def store():
     ...
