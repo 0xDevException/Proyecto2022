@@ -57,21 +57,13 @@ En este apartado el alumno explicará el contenido del repositorio y de todas la
     ├── app.py
     ├── config.py
     ├── controllers
-    │   ├── __pycache__
-    │   │   └── UserController.cpython-310.pyc
     │   ├── README.md
     │   └── UserController.py
     ├── models
-    │   ├── __pycache__
-    │   │   └── User.cpython-310.pyc
     │   ├── README.md
     │   └── User.py
-    ├── __pycache__
-    │   └── config.cpython-310.pyc
     ├── README.md
     ├── routes
-    │   ├── __pycache__
-    │   │   └── user_bp.cpython-310.pyc
     │   ├── README.md
     │   └── user_bp.py
     └── templates
