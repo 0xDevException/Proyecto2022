@@ -1,4 +1,5 @@
 # New Eden
+![Captura proyecto Escritorio](img/logo.png "New Eden")
 
 #### Curso Escolar 2022-2023
 #### Autor: [Carlos Muñoz Iglesias](https://github.com/romitus)
@@ -72,7 +73,7 @@ En este apartado el alumno explicará el contenido del repositorio y de todas la
 ```
 ## Demostración del proyecto
 
-![Mock del proyecto Escritorio](img/1.png "New Eden")
+![Captura proyecto Escritorio](img/1.png "New Eden")
 
 
-![Mock del proyecto Escritorio](img/4.png "New Eden")
+![Captura proyecto Escritorio](img/4.png "New Eden")
