@@ -71,7 +71,8 @@ En este apartado el alumno explicará el contenido del repositorio y de todas la
         └── users.html
 ```
 ## Demostración del proyecto
-***
-```diff
-Tarea en curso
-```
+
+![Mock del proyecto Escritorio](img/1.png "New Eden")
+
+
+![Mock del proyecto Escritorio](img/4.png "New Eden")
