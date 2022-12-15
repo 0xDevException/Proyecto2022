@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Tarea</title>
+
+      <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for("static", filename="assetsNA/vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+  <link href="{{ url_for("static", filename="assetsNA/vendor/bootstrap-icons/bootstrap-icons.css") }}" rel="stylesheet">
+  <link href="{{ url_for("static", filename="assetsNA/vendor/boxicons/css/boxicons.min.css") }}" rel="stylesheet">
+  <link href="{{ url_for("static", filename="assetsNA/vendor/quill/quill.snow.css") }}" rel="stylesheet">
+  <link href="{{ url_for("static", filename="assetsNA/vendor/quill/quill.bubble.css") }}" rel="stylesheet">
+  <link href="{{ url_for("static", filename="assetsNA/vendor/remixicon/remixicon.css") }}" rel="stylesheet">
+  <link href="{{ url_for("static", filename="assetsNA/vendor/simple-datatables/style.css") }}" rel="stylesheet">
+  
+  
+  
+  
+  
+  
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for("static", filename="assetsNA/css/style.css") }}" rel="stylesheet">
+</head>
+<body>
+                <!-- Modal Add-->
+
+          <h1>Añadir Tarea</h1>
+
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+              <div class="form-floating">
+                {{ form.personal(class_="form-control", size=128)}}
+                {{ form.personal.label }}
+            </div>
+            <div class="form-floating">
+                {{ form.task(class_="form-control", size=128)}}
+                {{ form.task.label }}
+            </div>
+            <div class="form-floating">
+                {{ form.status(class_="form-control", size=128)}}
+                {{ form.status.label }}
+            </div>
+            <div class="form-floating">
+              {{ form.userid(class_="form-control", size=128)}}
+              {{ form.userid.label }}
+          </div>
+                {{ form.submit(class="w-100 btn btn-lg btn-success") }}
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Add-->
+
+
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for("static", filename="assetsNA/vendor/apexcharts/apexcharts.min.js") }}"></script>
+    <script src="{{ url_for("static", filename="assetsNA/vendor/bootstrap/js/bootstrap.bundle.min.js") }}"></script>
+    <script src="{{ url_for("static", filename="assetsNAvendor/chart.js/chart.min.js") }}"></script>
+    <script src="{{ url_for("static", filename="assetsNA/vendor/echarts/echarts.min.js") }}"></script>
+    <script src="{{ url_for("static", filename="assetsNA/vendor/quill/quill.min.js") }}"></script>
+    <script src="{{ url_for("static", filename="assetsNA/vendor/simple-datatables/simple-datatables.js") }}"></script>
+    <script src="{{ url_for("static", filename="assetsNA/vendor/tinymce/tinymce.min.js") }}"></script>
+    <script src="{{ url_for("static", filename="assetsNA/vendor/php-email-form/validate.js") }}"></script>
+    
+    <!-- Template Main JS File -->
+    <script src="{{ url_for("static", filename="assetsNA/js/main.js") }}"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@ from flask_login import LoginManager, logout_user, login_user, login_required, c
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.urls import url_parse
 
-from forms import SignupForm, PostForm, LoginForm, EditForm
+from forms import SignupForm, PostForm, LoginForm, EditForm, EditTaskForm, AddTaskForm
 
 
 app = Flask(__name__)
@@ -76,9 +76,12 @@ def admin():
         data = SensorData.get_last(current_user.id)
         data2 = SensorData.get_lastTwo(current_user.id)
         dataTask = TaskData.get_all_admin(current_user.id)
+
         return render_template("Admin/index.html", data=data, data2=data2, dataTask=dataTask)
     else:
+        
         dataTask = TaskData.get_all_admin(current_user.id)
+
         return render_template("User/user.html", dataTask=dataTask)
 
 @app.route("/profile", methods=['GET', 'POST'])
@@ -134,6 +137,47 @@ def pending_task(id):
     task.status = "Pending"
     task.save()
     return redirect("/dashboard")
+
+
+
+@app.route('/updateTask/<int:id>', methods=['GET', 'POST'])
+def update_task(id):
+    #db.create_all()
+    #posts = Post.get_all()
+    
+    form = EditTaskForm()
+    
+    if current_user.is_anonymous:
+        return redirect(url_for('index'))
+    task1 = TaskData.query.filter_by(id=id).first()
+    if form.validate_on_submit():
+        task1.name = form.personal.data
+        task1.task = form.task.data
+        task1.status = form.status.data
+        task1.save()
+        return redirect("/dashboard")
+    return render_template("Admin/updateTask.html",form=form,task1=task1)
+
+@app.route('/addTask', methods=['GET', 'POST'])
+def add_task():
+    #db.create_all()
+    #posts = Post.get_all()
+    
+    form = AddTaskForm()
+    
+    if current_user.is_anonymous:
+        return redirect(url_for('index'))
+    task1 = TaskData()
+    if form.validate_on_submit():
+        task1.name = form.personal.data
+        task1.task = form.task.data
+        task1.status = form.status.data
+        task1.user_id = form.userid.data
+        task1.admin_id = 1
+        db.session.add(task1)
+        db.session.commit()
+        return redirect("/dashboard")
+    return render_template("Admin/addTask.html",form=form)
 
 
 @app.route('/logout')

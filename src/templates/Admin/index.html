@@ -9,10 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -340,7 +336,7 @@
               <div class="card recent-sales overflow-auto">
 
                 <div class="filter">
-                  <a class="btn btn-success" href="">Añadir Tarea</a>
+                  <a class="btn btn-success" href="/addTask">Añadir Tarea</a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <li class="dropdown-header text-start">
                       <h6>Filter</h6>
@@ -374,7 +370,7 @@
                         <td>{{item2.name}}</td>
                         <td><a href="#" class="text-primary">{{item2.task}}</a></td>
                         <td>{%if item2.status == "Pending" %} <span class="badge bg-warning">{% endif %} {%if item2.status == "Completed" %} <span class="badge bg-success">{% endif %}{%if item2.status == "Waiting" %} <span class="badge bg-danger">{% endif %}{{item2.status}}</span></td>
-                        <td><a class="text-decoration-none" href=""><i class="bi bi-pencil-fill text-success"></i></a>
+                        <td><a class="text-decoration-none" href="/updateTask/{{item2.id }}" ><i class="bi bi-pencil-fill text-success"></i></a>
                           <a class="text-decoration-none" href="/deleteTask/{{ item2.id }}"><i class="bi bi bi-trash-fill text-danger"></i></a></td>
                       </tr>
                       </tr>
