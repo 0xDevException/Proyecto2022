@@ -108,6 +108,34 @@ def profile():
 def load_user(user_id):
     return User.get_by_id(int(user_id))
 
+@app.route('/deleteTask/<int:id>')
+def delete_task(id):
+    task = TaskData.query.filter_by(id=id).first()
+    db.session.delete(task)
+    db.session.commit()
+    return redirect("/dashboard")
+
+@app.route('/completedTask/<int:id>')
+def completed_task(id):
+    task = TaskData.query.filter_by(id=id).first()
+    task.status = "Completed"
+    task.save()
+    return redirect("/dashboard")
+
+@app.route('/waitingTask/<int:id>')
+def waiting_task(id):
+    task = TaskData.query.filter_by(id=id).first()
+    task.status = "Waiting"
+    task.save()
+    return redirect("/dashboard")
+
+@app.route('/pendingTask/<int:id>')
+def pending_task(id):
+    task = TaskData.query.filter_by(id=id).first()
+    task.status = "Pending"
+    task.save()
+    return redirect("/dashboard")
+
 
 @app.route('/logout')
 def logout():

@@ -112,9 +112,18 @@ class TaskData(db.Model):
     def get_all_admin(id):
         return TaskData.query.filter_by(admin_id=id).all()
 
+    def save(self):
+        if not self.id:
+            db.session.add(self)
+        db.session.commit()
+
     @staticmethod
     def get_all_user(id):
         return TaskData.query.filter_by(user_id=id).all()
+    
+    @staticmethod
+    def delete_task(id):
+        return TaskData.query.filter_by(user_id=id).first()
 
 with app.app_context():
      db.create_all()  
