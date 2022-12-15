@@ -46,4 +46,5 @@ class AddTaskForm(FlaskForm):
     task = StringField('Tarea', validators=[DataRequired(), Length(max=128)])
     status = StringField('Estado', validators=[DataRequired(), Length(max=128)])
     userid = IntegerField('User ID', validators=[DataRequired()])
+    adminid = IntegerField('Admin ID', validators=[DataRequired()])
     submit = SubmitField('Guardar Cambios')

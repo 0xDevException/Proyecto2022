@@ -173,7 +173,7 @@ def add_task():
         task1.task = form.task.data
         task1.status = form.status.data
         task1.user_id = form.userid.data
-        task1.admin_id = 1
+        task1.admin_id = form.adminid.data
         db.session.add(task1)
         db.session.commit()
         return redirect("/dashboard")
