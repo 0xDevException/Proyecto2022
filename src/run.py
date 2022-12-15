@@ -69,16 +69,15 @@ def index():
 def admin():
     #db.create_all()
     #posts = Post.get_all()
-    if current_user.is_admin == 1:
-        if current_user.is_anonymous:
+    if current_user.is_anonymous:
             return redirect(url_for('index'))
+    if current_user.is_admin == 1:
+        
         data = SensorData.get_last(current_user.id)
         data2 = SensorData.get_lastTwo(current_user.id)
         dataTask = TaskData.get_all_admin(current_user.id)
         return render_template("Admin/index.html", data=data, data2=data2, dataTask=dataTask)
     else:
-        if current_user.is_anonymous:
-            return redirect(url_for('index'))
         dataTask = TaskData.get_all_admin(current_user.id)
         return render_template("User/user.html", dataTask=dataTask)
 
