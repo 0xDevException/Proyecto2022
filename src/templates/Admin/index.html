@@ -340,7 +340,7 @@
               <div class="card recent-sales overflow-auto">
 
                 <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <a class="btn btn-success" href="">Añadir Tarea</a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <li class="dropdown-header text-start">
                       <h6>Filter</h6>
@@ -362,6 +362,7 @@
                         <th scope="col">Personal</th>
                         <th scope="col">Tarea</th>
                         <th scope="col">Estado</th>
+                        <th scope="col">Acciones</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -373,10 +374,14 @@
                         <td>{{item2.name}}</td>
                         <td><a href="#" class="text-primary">{{item2.task}}</a></td>
                         <td>{%if item2.status == "Pending" %} <span class="badge bg-warning">{% endif %} {%if item2.status == "Completed" %} <span class="badge bg-success">{% endif %}{%if item2.status == "Waiting" %} <span class="badge bg-danger">{% endif %}{{item2.status}}</span></td>
+                        <td><a class="text-decoration-none" href=""><i class="bi bi-pencil-fill text-success"></i></a>
+                          <a class="text-decoration-none" href="/deleteTask/{{ item2.id }}"><i class="bi bi bi-trash-fill text-danger"></i></a></td>
+                      </tr>
                       </tr>
                       {% endfor %}
                     </tbody>
                   </table>
+                  
 
                 </div>
 
