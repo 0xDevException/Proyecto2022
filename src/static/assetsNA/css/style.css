@@ -30,6 +30,10 @@ h6 {
   font-family: "Jost", sans-serif;
 }
 
+main.main:nth-child(3) section.section.dashboard div.row div.col-lg-12 div.row div.col-12:nth-child(5) div.card.recent-sales.overflow-auto div.filter > a.btn.btn-success{
+  margin-right: 20px;
+}
+
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
